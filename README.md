@@ -17,6 +17,25 @@ cd cnlblab
 vagrant up
 ```
 
+The following setup would be created: 
+```
++--------------+        +---------------+
+|    master    |        |   worker1     |
+| 192.168.80.10|        | 192.168.80.101|
++------+-------+        +-------+-------+
+       |                        |
+       |                        |
+       +-----------+------------+
+                   |
+                   |
+             +-----+------+
+             |   host     |
+             |192.168.80.9|
+             +------------+
+
+```
+
+
 ### How to setup and test LoxiLB ??
 
 #### Login into master node 
